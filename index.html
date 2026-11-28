@@ -1,121 +1,242 @@
 
 <!DOCTYPE html>
 <html lang="fa" dir="rtl">
-<head><meta name="google-site-verification" content="fDQGMrazUBKJ5y-OQ-ileGSYXjT2XNLx_jVr-olMMV0" />
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NEXORA | Digital Web Studio</title>
-    <meta name="description" content="NEXORA - طراحی وب‌سایت‌های مدرن و حرفه‌ای">
+
+    <meta name="description"
+          content="NEXORA Digital Studio - طراحی وب‌سایت‌های مدرن و لوکس">
+
+    <title>NEXORA — Digital Web Studio</title>
+
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
 <header class="header">
-    <a class="logo" href="#">NEXORA<span>.</span></a>
+    <a href="#home" class="logo">NEXORA<span>.</span></a>
 
-    <nav>
+    <button class="menu-toggle" id="menuToggle"
+            aria-label="باز کردن منو">☰</button>
+
+    <nav class="nav" id="nav">
         <a href="#home" data-fa="خانه" data-en="Home">خانه</a>
         <a href="#services" data-fa="خدمات" data-en="Services">خدمات</a>
-        <a href="#portfolio" data-fa="نمونه‌کارها" data-en="Portfolio">نمونه‌کارها</a>
+        <a href="#work" data-fa="پروژه‌ها" data-en="Projects">پروژه‌ها</a>
         <a href="#about" data-fa="درباره ما" data-en="About">درباره ما</a>
         <a href="#contact" data-fa="تماس" data-en="Contact">تماس</a>
     </nav>
 
-    <button id="languageBtn">EN</button>
+    <button class="language-btn" id="languageBtn">EN</button>
 </header>
 
 <main>
+
+    <!-- HERO -->
+
     <section class="hero" id="home">
-        <p class="eyebrow">NEXORA DIGITAL WEB STUDIO</p>
 
-        <h1 data-fa="آینده دیجیتال کسب‌وکار شما، از اینجا شروع می‌شود."
-            data-en="Your Digital Future Starts Here.">
-            آینده دیجیتال کسب‌وکار شما، از اینجا شروع می‌شود.
-        </h1>
+        <div class="hero-content">
+            <span class="eyebrow">
+                <span class="dot"></span>
+                NEXORA DIGITAL STUDIO
+            </span>
 
-        <p class="subtitle"
-           data-fa="طراحی وب‌سایت‌های مدرن، خلاقانه و حرفه‌ای."
-           data-en="Modern, creative and professional website design.">
-           طراحی وب‌سایت‌های مدرن، خلاقانه و حرفه‌ای.
-        </p>
+            <h1 data-fa="ما برای برند شما،<br>یک <span>تجربه دیجیتال</span> می‌سازیم."
+                data-en="We create a <span>digital experience</span> for your brand.">
+                ما برای برند شما،
+                <span>یک تجربه دیجیتال</span> می‌سازیم.
+            </h1>
 
-        <a href="#services" class="gold-btn"
-           data-fa="مشاهده خدمات"
-           data-en="Explore Services">مشاهده خدمات</a>
+            <p class="hero-description"
+               data-fa="طراحی وب‌سایت‌های مدرن، اختصاصی و حرفه‌ای برای کسب‌وکارهایی که به آینده فکر می‌کنند."
+               data-en="Modern, custom and professional websites for businesses that think about the future.">
+               طراحی وب‌سایت‌های مدرن، اختصاصی و حرفه‌ای برای کسب‌وکارهایی که به آینده فکر می‌کنند.
+            </p>
+
+            <div class="hero-actions">
+                <a href="#work" class="btn gold"
+                   data-fa="مشاهده پروژه‌ها ↗"
+                   data-en="Explore Projects ↗">مشاهده پروژه‌ها ↗</a>
+
+                <a href="#contact" class="btn outline"
+                   data-fa="شروع همکاری"
+                   data-en="Start a Project">شروع همکاری</a>
+            </div>
+        </div>
+
+        <div class="hero-bottom">
+            <span>DESIGN · DEVELOPMENT · DIGITAL</span>
+            <a href="#services">SCROLL TO EXPLORE ↓</a>
+        </div>
+
     </section>
 
+    <!-- SERVICES -->
+
     <section class="section" id="services">
-        <p class="eyebrow">WHAT WE DO</p>
-        <h2 data-fa="خدمات ما" data-en="Our Services">خدمات ما</h2>
 
-        <div class="cards">
-            <article class="card">
-                <h3 data-fa="طراحی سایت شرکتی" data-en="Business Websites">طراحی سایت شرکتی</h3>
-                <p data-fa="وب‌سایت حرفه‌ای برای معرفی کسب‌وکار شما."
-                   data-en="Professional websites for your business.">
-                   وب‌سایت حرفه‌ای برای معرفی کسب‌وکار شما.
+        <div class="section-heading">
+            <span class="eyebrow">WHAT WE DO</span>
+            <h2 data-fa="خدمات <span>ما</span>"
+                data-en="What We <span>Do</span>">
+                خدمات <span>ما</span>
+            </h2>
+            <p data-fa="از ایده تا اجرای یک تجربه دیجیتال حرفه‌ای."
+               data-en="From an idea to a professional digital experience.">
+               از ایده تا اجرای یک تجربه دیجیتال حرفه‌ای.
+            </p>
+        </div>
+
+        <div class="services-grid">
+
+            <article class="service-card">
+                <span class="service-number">01</span>
+                <div class="service-icon">✳</div>
+                <h3 data-fa="طراحی وب‌سایت" data-en="Web Design">طراحی وب‌سایت</h3>
+                <p data-fa="طراحی رابط‌های مدرن و جذاب متناسب با هویت برند."
+                   data-en="Modern and attractive interfaces tailored to your brand.">
+                   طراحی رابط‌های مدرن و جذاب متناسب با هویت برند.
                 </p>
             </article>
 
-            <article class="card">
-                <h3 data-fa="فروشگاه اینترنتی" data-en="Online Stores">فروشگاه اینترنتی</h3>
-                <p data-fa="طراحی فروشگاه‌های آنلاین مدرن."
-                   data-en="Modern and user-friendly online stores.">
-                   طراحی فروشگاه‌های آنلاین مدرن.
+            <article class="service-card">
+                <span class="service-number">02</span>
+                <div class="service-icon">◈</div>
+                <h3 data-fa="توسعه وب" data-en="Web Development">توسعه وب</h3>
+                <p data-fa="تبدیل طرح‌های گرافیکی به وب‌سایت‌های کاربردی."
+                   data-en="Turning designs into functional websites.">
+                   تبدیل طرح‌های گرافیکی به وب‌سایت‌های کاربردی.
                 </p>
             </article>
 
-            <article class="card">
-                <h3 data-fa="طراحی اختصاصی" data-en="Custom Websites">طراحی اختصاصی</h3>
-                <p data-fa="ساخت وب‌سایت متناسب با نیاز شما."
-                   data-en="Custom websites tailored to your needs.">
-                   ساخت وب‌سایت متناسب با نیاز شما.
+            <article class="service-card">
+                <span class="service-number">03</span>
+                <div class="service-icon">◇</div>
+                <h3 data-fa="فروشگاه اینترنتی" data-en="E-commerce">فروشگاه اینترنتی</h3>
+                <p data-fa="ساخت فروشگاه‌های آنلاین با تجربه خرید آسان."
+                   data-en="Online stores with smooth shopping experiences.">
+                   ساخت فروشگاه‌های آنلاین با تجربه خرید آسان.
                 </p>
             </article>
+
         </div>
     </section>
 
-    <section class="section portfolio" id="portfolio">
-        <p class="eyebrow">OUR WORK</p>
-        <h2 data-fa="نمونه‌کارهای ما" data-en="Our Portfolio">نمونه‌کارهای ما</h2>
-        <p data-fa="پروژه‌های منتخب NEXORA به‌زودی در این قسمت قرار می‌گیرند."
-           data-en="Selected NEXORA projects will appear here soon.">
-           پروژه‌های منتخب NEXORA به‌زودی در این قسمت قرار می‌گیرند.
+    <!-- PORTFOLIO -->
+
+    <section class="section work-section" id="work">
+
+        <div class="section-heading">
+            <span class="eyebrow">SELECTED CONCEPTS</span>
+            <h2 data-fa="منتخب <span>پروژه‌ها</span>"
+                data-en="Selected <span>Projects</span>">
+                منتخب <span>پروژه‌ها</span>
+            </h2>
+            <p data-fa="نمونه‌های طراحی مفهومی استودیوی NEXORA."
+               data-en="Concept designs created by NEXORA Studio.">
+               نمونه‌های طراحی مفهومی استودیوی NEXORA.
+            </p>
+        </div>
+
+        <div class="projects-grid">
+
+            <article class="project">
+                <div class="project-image project-one">
+                    <span>01 / E-COMMERCE</span>
+                    <div class="project-preview">LUXE</div>
+                </div>
+                <div class="project-info">
+                    <h3>Luxury Store</h3>
+                    <span>Online Shopping Concept</span>
+                </div>
+            </article>
+
+            <article class="project">
+                <div class="project-image project-two">
+                    <span>02 / GAMING</span>
+                    <div class="project-preview">NEXT LEVEL</div>
+                </div>
+                <div class="project-info">
+                    <h3>Gaming World</h3>
+                    <span>Gaming Website Concept</span>
+                </div>
+            </article>
+
+            <article class="project">
+                <div class="project-image project-three">
+                    <span>03 / BUSINESS</span>
+                    <div class="project-preview">STUDIO</div>
+                </div>
+                <div class="project-info">
+                    <h3>Business Studio</h3>
+                    <span>Corporate Website Concept</span>
+                </div>
+            </article>
+
+        </div>
+
+        <p class="portfolio-note"
+           data-fa="این سه مورد پروژه‌های مفهومی و تمرینی هستند، نه سفارش‌های واقعی مشتریان."
+           data-en="These are concept projects, not real client commissions.">
+           این سه مورد پروژه‌های مفهومی و تمرینی هستند، نه سفارش‌های واقعی مشتریان.
         </p>
+
     </section>
 
-    <section class="section about" id="about">
-        <p class="eyebrow">ABOUT NEXORA</p>
-        <h2 data-fa="ما چه کاری انجام می‌دهیم؟"
-            data-en="Who We Are">
-            ما چه کاری انجام می‌دهیم؟
+    <!-- ABOUT -->
+
+    <section class="section about-section" id="about">
+
+        <span class="eyebrow">ABOUT NEXORA</span>
+
+        <h2 data-fa="دیجیتال، با <span>نگاهی متفاوت</span>."
+            data-en="Digital, with a <span>different perspective</span>.">
+            دیجیتال، با <span>نگاهی متفاوت</span>.
         </h2>
-        <p data-fa="NEXORA یک استودیوی طراحی وب با تمرکز بر خلق تجربه‌های دیجیتال مدرن و کاربردی است."
-           data-en="NEXORA is a web design studio focused on creating modern and useful digital experiences.">
-           NEXORA یک استودیوی طراحی وب با تمرکز بر خلق تجربه‌های دیجیتال مدرن و کاربردی است.
+
+        <p data-fa="NEXORA یک استودیوی طراحی وب در حال توسعه است که با تمرکز بر خلاقیت، طراحی مدرن و تکنولوژی، تجربه‌های دیجیتال خلق می‌کند."
+           data-en="NEXORA is a growing web design studio creating digital experiences through creativity, modern design and technology.">
+           NEXORA یک استودیوی طراحی وب در حال توسعه است که با تمرکز بر خلاقیت، طراحی مدرن و تکنولوژی، تجربه‌های دیجیتال خلق می‌کند.
         </p>
+
     </section>
 
-    <section class="section contact" id="contact">
-        <p class="eyebrow">LET'S WORK TOGETHER</p>
-        <h2 data-fa="پروژه بعدی شما چیست؟"
-            data-en="What's Your Next Project?">
-            پروژه بعدی شما چیست؟
+    <!-- CONTACT -->
+
+    <section class="section contact-section" id="contact">
+
+        <span class="eyebrow">LET'S CONNECT</span>
+
+        <h2 data-fa="ایده‌ای در ذهن دارید؟<br><span>بیایید بسازیم.</span>"
+            data-en="Have an idea?<br><span>Let's build it.</span>">
+            ایده‌ای در ذهن دارید؟
+            <span>بیایید بسازیم.</span>
         </h2>
-        <p data-fa="برای شروع همکاری با ما در ارتباط باشید."
-           data-en="Get in touch to discuss your project.">
-           برای شروع همکاری با ما در ارتباط باشید.
+
+        <p data-fa="برای صحبت درباره پروژه بعدی خود با ما ارتباط بگیرید."
+           data-en="Let's talk about your next digital project.">
+           برای صحبت درباره پروژه بعدی خود با ما ارتباط بگیرید.
         </p>
-        <a href="mailto:hello@nexora.example" class="gold-btn">
-            Contact NEXORA
+
+        <!-- Replace with your real business email -->
+        <a href="mailto:YOUR-EMAIL@example.com" class="btn gold">
+            hello@NEXORA.com ↗
         </a>
+
     </section>
+
 </main>
 
-<footer>
+<footer class="footer">
+    <a href="#home" class="logo">NEXORA<span>.</span></a>
     <p>© 2026 NEXORA Studio. All rights reserved.</p>
+    <span>DESIGNED WITH PURPOSE.</span>
 </footer>
 
 <script src="script.js"></script>
+
 </body>
 </html>
